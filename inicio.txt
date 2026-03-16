@@ -1,0 +1,6 @@
+inicio
+    informe o valor de A
+    informe o valor de B
+    soma de A+B=C
+    C/2=media
+    Fim
