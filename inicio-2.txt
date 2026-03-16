@@ -1,0 +1,10 @@
+Inicio 
+    insira a nota A 
+    insira a nota B 
+    media = (A+B)/2  
+     se Media >=7
+        informe aprovad
+     Se não 
+        Informe reprovado
+    fim se
+FIM
