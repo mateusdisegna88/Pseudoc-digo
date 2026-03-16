@@ -1,0 +1,7 @@
+Inicio
+   x=2 
+     enquanto (x <=20) faca
+     escreva X 
+     x = x + 2
+     fim enquanto
+fim
