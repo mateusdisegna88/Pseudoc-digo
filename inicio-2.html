@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Notas</title>
+</head>
+<body>
+    <h1>Verificador de Aprovação</h1>
+    <p>Clique no botão para iniciar o processo.</p>
+    
+    <button onclick="verificarStatus()">Iniciar Teste</button>
+
+    <script>
+        function verificarStatus() {
+            // Início
+            // O prompt recebe o texto e o parseFloat converte para número
+            let notaA = parseFloat(prompt("Insira a nota A:"));
+            let notaB = parseFloat(prompt("Insira a nota B:"));
+
+            // Calculando a média
+            let media = (notaA + notaB) / 2;
+
+            // Estrutura de Decisão (Se / Senão)
+            if (media >= 7) {
+                // Informe aprovado
+                alert("Média: " + media.toFixed(1) + " - APROVADO! 🎉");
+            } else {
+                // Informe reprovado
+                alert("Média: " + media.toFixed(1) + " - REPROVADO. ❌");
+            }
+            // Fim
+        }
+    </script>
+</body>
+</html>

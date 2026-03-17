@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sequência de Pares</title>
+</head>
+<body>
+    <h2>Números Pares de 1 a 20:</h2>
+    <div id="lista"></div>
+
+    <script>
+        let x = 2;
+        let resultado = "";
+        let elementoDiva = document.getElementById('lista');
+
+        while (x <= 20) {
+            resultado += x + " <br>"; // Adiciona o número e uma quebra de linha
+            x = x + 2;
+        }
+
+        elementoDiva.innerHTML = resultado;
+    </script>
+</body>
+</html>
