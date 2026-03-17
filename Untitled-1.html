@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Média</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; margin-top: 50px; }
+        .container { border: 1px solid #ccc; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        input { margin: 5px; padding: 8px; }
+        button { padding: 10px 20px; cursor: pointer; background-color: #28a745; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Média</h2>
+        <input type="number" id="valorA" placeholder="Valor de A"> <br>
+        <input type="number" id="valorB" placeholder="Valor de B"> <br>
+        <button onclick="calcular()">Calcular Média</button>
+        <h3 id="resultado"></h3>
+    </div>
+
+    <script>
+        function calcular() {
+            // Pegando os valores dos campos de input
+            let a = parseFloat(document.getElementById('valorA').value);
+            let b = parseFloat(document.getElementById('valorB').value);
+
+            // Verificando se os números são válidos
+            if (isNaN(a) || isNaN(b)) {
+                alert("Por favor, digite números válidos!");
+                return;
+            }
+
+            // A lógica que você pediu
+            let soma = a + b;
+            let media = soma / 2;
+
+            // Exibindo na tela
+            document.getElementById('resultado').innerText = "A média é: " + media;
+        }
+    </script>
+
+</body>
+</html>
